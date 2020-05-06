@@ -12,7 +12,7 @@ gulp.task('less', () =>{
         .pipe(less({
             includePath: ['less']
         }))
-        .pipe(gulp.dest('css/styles.css'));
+        .pipe(gulp.dest('css/'));
 });
 
 
