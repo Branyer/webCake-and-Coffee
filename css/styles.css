@@ -62,13 +62,16 @@ body {
 .header nav ul li a:hover {
   color: #b4afaf;
 }
+main,
+footer {
+  position: relative;
+  top: 90px;
+  z-index: 200;
+}
 .inicio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  z-index: 200;
-  top: 90px;
   width: 100%;
   height: 80vh;
   max-width: 100%;
@@ -146,8 +149,8 @@ body {
   -ms-flex-align: center;
   align-items: center;
   background-color: black;
-  -webkit-transition: opacity 1s ease;
-  transition: opacity 1s ease;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
   opacity: 0;
 }
 .inicio .inicio_col .overlay i {
@@ -160,4 +163,51 @@ body {
 .inicio .inicio_col .portada-4:hover .overlay {
   opacity: 0.6;
   cursor: pointer;
+}
+.nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  height: 70vh;
+}
+.nosotros .nosotros-titulo {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 10%;
+}
+.nosotros .nosotros-titulo .primero {
+  font-size: 1.3rem;
+  color: #8a8787;
+}
+.nosotros .nosotros-titulo .segundo {
+  font-size: 3rem;
+  font-style: italic;
+  color: #000000;
+}
+.nosotros .parrafo-nosotros {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.nosotros .parrafo-nosotros p {
+  font-size: 1.3rem;
+  color: #8a8787;
+  border-left: 1px solid #c0b9b9;
+  margin-right: 10%;
+  padding-left: 5%;
 }
