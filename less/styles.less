@@ -11,6 +11,12 @@ body
     
 }
 
+///////////////////
+/////Variables/////
+//////////////////
+
+
+
 //////////////////////////////////
 // HEADER
 /////////////////////////////////
@@ -22,6 +28,7 @@ body
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 300;
     background-color: white;
 
     
@@ -36,19 +43,37 @@ body
     {
         height: 50px;
         margin-left: 50px;
-     
+
+        &:hover
+        {
+            cursor: pointer;
+        }        
     }
+
 
     nav ul{
         list-style: none;
     }
+
+    .nav-page ul
+    {
+        width: 450px;
+    }
+    
+    .nav-red ul
+    {
+        margin-right: 50px;
+        width: 100px;
+    }
+
 
     nav ul li a
     {
         text-decoration: none;
     }
 
-    nav ul li a{
+    nav ul li a
+    {
         color: rgb(78, 76, 76);
         transition: color .5s ease;
 
@@ -58,16 +83,121 @@ body
         }
     }
 
-
 }
 
-.nav-page ul
-{
-    width: 450px;
-}
+//////////////////////////////////
+// INICIO
+/////////////////////////////////
 
-.nav-red ul
+.inicio
 {
-    margin-right: 50px;
-    width: 100px;
+    display: flex;
+    position: relative;
+    z-index: 200;
+    top: 90px;
+    width: 100%;
+    height: 80vh;
+    max-width: 100%;
+
+    .inicio_col
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 100%;
+
+
+        .portada-1 , .portada-4, .texto
+        {
+            width: 50%;
+            height: 60%;
+        }
+
+
+        .texto
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            padding: 3%;
+        }
+
+        .texto h1
+        {
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .portada-2 , .portada-3
+        {
+            width: 100%;
+            height: 40%;
+        }
+
+        .portada-1
+        {
+            background-image: url('../img/portada-1.jpg');
+        }
+
+        .portada-2
+        {
+            background-image: url('../img/portada-2.jpg');
+        }
+
+        .portada-3
+        {
+            background-image: url('../img/portada-3.jpg');
+        }
+
+        .portada-4
+        {
+            background-image: url('../img/portada-4.jpg');
+        }
+
+        .portada-1, .portada-2, .portada-3, .portada-4
+        {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            z-index: 300;
+        }
+        
+        .overlay
+        {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            transition: opacity 1s ease;
+            opacity: 0;
+
+            i
+            {
+                color: white;
+                font-size: 2rem;
+            }
+        }
+    
+
+        .portada-1:hover .overlay,
+        .portada-2:hover .overlay, 
+        .portada-3:hover .overlay, 
+        .portada-4:hover .overlay
+        {
+            opacity: .6;
+            cursor: pointer;
+            
+    }
+
+
+
+
+
+    }
+
+
 }
