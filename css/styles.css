@@ -211,3 +211,60 @@ footer {
   margin-right: 10%;
   padding-left: 5%;
 }
+.nuestro-chef {
+  width: 100%;
+  height: 70vh;
+  background-color: #141313;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2%;
+}
+.nuestro-chef .contenedor {
+  width: 50%;
+  height: 80%;
+  overflow: hidden;
+}
+.nuestro-chef .contenedor .texto {
+  margin-left: 5%;
+}
+.nuestro-chef .contenedor .texto h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  font-style: italic;
+  color: white;
+}
+.nuestro-chef .contenedor .texto p {
+  width: 80%;
+  font-size: 1.3rem;
+  color: #8a8787;
+}
+.nuestro-chef .contenedor .slider {
+  width: 300%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.nuestro-chef .contenedor .slider .foto1,
+.nuestro-chef .contenedor .slider .foto2,
+.nuestro-chef .contenedor .slider .foto3 {
+  width: 80%;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+.nuestro-chef .contenedor .slider .foto1 {
+  background-image: url('../img/chef-1.jpg');
+}
+.nuestro-chef .contenedor .slider .foto2 {
+  background-image: url('../img/chef-2.jpg');
+}
+.nuestro-chef .contenedor .slider .foto3 {
+  background-image: url('../img/chef-3.jpg');
+}
